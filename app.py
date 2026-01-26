@@ -152,7 +152,7 @@ def local_css(file_name):
 
 
 
-local_css("style/style.css")
+local_css("styles/style.css")
 
 # ---- LOAD ASSETS ----
 
@@ -162,9 +162,8 @@ lottie_job = load_lottieurl("https://lottie.host/80c4e616-27b7-49ed-be7d-5ab4462
 
 
 # images
-img_contact_form = Image.open("images/Me2.jpg")
-img_hobby = Image.open("images/jule3.jpg")
-img_me = Image.open("images/jule2.png")
+img_contact_form = Image.open("assets/Me2.jpg")
+img_hobby = Image.open("assets/jule3.jpg")
 
 # ---- HEADER SECTION ----
 
@@ -602,3 +601,4 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
+

@@ -135,14 +135,18 @@ main > div {
 <div class="navbar">
     
     <!-- Hidden checkbox -->
-    <input type="checkbox" id="menu-toggle">
+    <div>
+        <input type="checkbox" id="menu-toggle">
+    </div>
 
     <!-- Hamburger icon -->
-    <label for="menu-toggle" class="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
-    </label>
+    <div>
+        <label for="menu-toggle" class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+    </div>
 
     <!-- Navigation links -->
     <div class="nav-left">
@@ -656,6 +660,7 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
+
 
 
 

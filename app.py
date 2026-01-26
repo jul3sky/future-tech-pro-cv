@@ -556,7 +556,7 @@ with st.container():
         <input type="hidden" name="_captcha" value="false">
         <input type="text" name="name" placeholder="Your Full Name" required>
         <input type="email" name="email" placeholder="Your Email" required>
-        <input type="message" placeholder="Your Message Here" required>
+        <textarea name="message" placeholder="Your Message Here" required></textarea>
         <button type="submit">Send</button>
     </form>
     """
@@ -601,4 +601,5 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
+
 

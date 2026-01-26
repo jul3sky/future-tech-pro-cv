@@ -50,105 +50,20 @@ details > div {
 st.markdown("""
 <style>
 
-/* Remove default Streamlit padding */
-.block-container {
-    padding-top: 0rem !important;
-}
-
-main > div {
-    padding-top: 0 !important;
-    margin-top: 0 !important;
-}
-
-/* NAVBAR BASE */
-.navbar {
-    background-color: #0b2033;
-    padding: 20px 25px;
-    width: 100%;
-    border-radius: 6px;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-/* LEFT LINKS */
-.nav-left {
-    display: flex;
-    gap: 20px;
-}
-
-.nav-left a {
-    color: #87CEEB;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: 500;
-}
-
-.nav-left a:hover {
-    color: #FF6F61;
-    text-decoration: underline;
-}
-
-/* HAMBURGER ICON (hidden on desktop) */
-.hamburger {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-}
-
-.hamburger span {
-    height: 3px;
-    width: 25px;
-    background: #87CEEB;
-    margin-bottom: 5px;
-    border-radius: 5px;
-}
-
-/* MOBILE MENU TOGGLE */
-#menu-toggle {
-    display: none;
-}
-
-/* MOBILE STYLES */
-@media (max-width: 768px) {
-
-    .nav-left {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        margin-top: 15px;
-    }
-
-    /* Show menu when checkbox is checked */
-    #menu-toggle:checked + .hamburger + .nav-left {
-        display: flex;
-    }
-
-    .hamburger {
-        display: flex;
-    }
-}
+/* your CSS here */
 
 </style>
 
 <div class="navbar">
     
-    <!-- Hidden checkbox -->
-    <div>
-        <input type="checkbox" id="menu-toggle">
-    </div>
+    <input type="checkbox" id="menu-toggle">
 
-    <!-- Hamburger icon -->
-    <div>
-        <label for="menu-toggle" class="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-        </label>
-    </div>
+    <label for="menu-toggle" class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
 
-    <!-- Navigation links -->
     <div class="nav-left">
         <a href="#projects">Projects</a>
         <a href="#work-experience">Job Experience</a>
@@ -159,6 +74,7 @@ main > div {
     </div>
 
 </div>
+
 """, unsafe_allow_html=True)
 
 
@@ -660,6 +576,7 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
+
 
 
 

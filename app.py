@@ -546,8 +546,10 @@ with st.container():
 
 
 # ---- CONTACT ----
+st.write("----")
+st.markdown('<div id="contact"></div>', unsafe_allow_html=True) # connect the section with navbar menu
+
 with st.container():
-    st.write("----")
     st.header("Get In Touch With Me")
     st.write("##")
 
@@ -601,5 +603,6 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
+
 
 

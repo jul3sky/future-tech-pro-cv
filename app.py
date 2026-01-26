@@ -60,23 +60,27 @@ main > div {
     margin-top: 0 !important;
 }
 
-/* Header container */
+/* NAVBAR BASE */
 .navbar {
     background-color: #0b2033;
-    padding: 30px 25px 30px 32px;
+    padding: 20px 25px;
     width: 100%;
     border-radius: 6px;
 
     display: flex;
-    justify-content: space-between;   /* left links + right button */
+    justify-content: space-between;
     align-items: center;
 }
 
-/* Left menu container */
+/* LEFT LINKS */
+.nav-left {
+    display: flex;
+    gap: 20px;
+}
+
 .nav-left a {
     color: #87CEEB;
     text-decoration: none;
-    margin: 0 20px;
     font-size: 18px;
     font-weight: 500;
 }
@@ -86,21 +90,71 @@ main > div {
     text-decoration: underline;
 }
 
+/* HAMBURGER ICON (hidden on desktop) */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
 
+.hamburger span {
+    height: 3px;
+    width: 25px;
+    background: #87CEEB;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+/* MOBILE MENU TOGGLE */
+#menu-toggle {
+    display: none;
+}
+
+/* MOBILE STYLES */
+@media (max-width: 768px) {
+
+    .nav-left {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    /* Show menu when checkbox is checked */
+    #menu-toggle:checked + .hamburger + .nav-left {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}
 
 </style>
 
-<div class="navbar">
-    <div class="nav-left">
-        <a href="#projects">Projects</a>
-        <a href="#work-experience">Job Experience</a>
-        <a href="#skills">Skills</a>
-        <a href="#education">Education and Languages</a>
-        <a href="#hobbys">Hobbys</a>
-        <a href="#contact">Contact</a>
-    </div>
+    <div class="navbar">
+        
+        <!-- Hidden checkbox -->
+        <input type="checkbox" id="menu-toggle">
     
-</div>
+        <!-- Hamburger icon -->
+        <label for="menu-toggle" class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+    
+        <!-- Navigation links -->
+        <div class="nav-left">
+            <a href="#projects">Projects</a>
+            <a href="#work-experience">Job Experience</a>
+            <a href="#skills">Skills</a>
+            <a href="#education">Education and Languages</a>
+            <a href="#hobbys">Hobbys</a>
+            <a href="#contact">Contact</a>
+        </div>
+    
+    </div>
 """, unsafe_allow_html=True)
 
 # Footer
@@ -600,6 +654,7 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
+
 
 
 

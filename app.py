@@ -48,28 +48,29 @@ details > div {
 
 # Navigation bar
 st.markdown(
-    """
-    <div class="navbar">
+"""
+<div class="navbar">
         <input type="checkbox" id="menu-toggle">
     
-        <label for="menu-toggle" class="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-        </label>
+    <label for="menu-toggle" class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
     
-        <div class="nav-left">
-            <a href="#projects">Projects</a>
-            <a href="#work-experience">Job Experience</a>
-            <a href="#skills">Skills</a>
-            <a href="#education">Education and Languages</a>
-            <a href="#hobbys">Hobbys</a>
-            <a href="#contact">Contact</a>
-        </div>
+    <div class="nav-left">
+        <a href="#projects">Projects</a>
+        <a href="#work-experience">Job Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education and Languages</a>
+        <a href="#hobbys">Hobbys</a>
+        <a href="#contact">Contact</a>
     </div>
-    """, 
-    unsafe_allow_html=True
+</div>
+""", unsafe_allow_html=True
 )
+    
+
 
 
 # Footer
@@ -569,6 +570,7 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
+
 
 
 

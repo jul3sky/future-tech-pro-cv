@@ -39,4 +39,56 @@ button[type=submit]:hover {
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 20px;
+
+}
+
+/* Navigation bar styling */
+
+.navbar {
+    background-color: #0b2033;
+    padding: 20px 25px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-left {
+    display: flex;
+    gap: 20px;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger span {
+    height: 3px;
+    width: 25px;
+    background: #87CEEB;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .nav-left {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    #menu-toggle:checked + .hamburger + .nav-left {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+    }
 }

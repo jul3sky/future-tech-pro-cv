@@ -46,24 +46,51 @@ details > div {
 </style>
 """, unsafe_allow_html=True)
 
-# Nav bar
+# Navigation bar
 st.markdown("""
 <style>
 
-/* your CSS here */
+/* Remove default Streamlit padding */
+.block-container {
+    padding-top: 0rem !important;
+}
+
+main > div {
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+}
+
+/* Header container */
+.navbar {
+    background-color: #0b2033;
+    padding: 30px 25px 30px 32px;
+    width: 100%;
+    border-radius: 6px;
+
+    display: flex;
+    justify-content: space-between;   /* left links + right button */
+    align-items: center;
+}
+
+/* Left menu container */
+.nav-left a {
+    color: #87CEEB;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.nav-left a:hover {
+    color: #FF6F61;
+    text-decoration: underline;
+}
+
+
 
 </style>
 
 <div class="navbar">
-    
-    <input type="checkbox" id="menu-toggle">
-
-    <label for="menu-toggle" class="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
-    </label>
-
     <div class="nav-left">
         <a href="#projects">Projects</a>
         <a href="#work-experience">Job Experience</a>
@@ -72,12 +99,9 @@ st.markdown("""
         <a href="#hobbys">Hobbys</a>
         <a href="#contact">Contact</a>
     </div>
-
+    
 </div>
-
 """, unsafe_allow_html=True)
-
-
 
 # Footer
 st.markdown(
@@ -576,6 +600,7 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
+
 
 
 

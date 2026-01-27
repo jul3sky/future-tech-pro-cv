@@ -221,7 +221,7 @@ Overall, this project was a genuine journey — one that strengthened my technic
 
         st.write("##")
         st.header("Cybersecurity 101 – TryHackMe.com Labs ") # Cybersecurity Experience
-        st.markdown("##### Apr 2025 – Sep 2025")
+        st.markdown("##### Sep 2025 – Dec 2025")
 
         st.write("This project marked the moment I stepped beyond curiosity and into the real, hands‑on world of cybersecurity. Working through TryHackMe’s virtual labs felt less like a course and more like entering a new landscape — one where every challenge taught me how systems work, how they break, and how to protect them.")
         with st.expander("Continue reading"):
@@ -561,6 +561,7 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
+
 
 
 

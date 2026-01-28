@@ -511,14 +511,25 @@ with st.container():
     st.header("Get In Touch With Me")
     st.write("##")
 
+    
+
     contact_form = """
     <form action="https://formsubmit.co/3565291d5302d775cea9f27bb310452e" method="POST">
+
+        <!-- Honeypot field -->
+        <input type="text" name="_honey" style="display:none">
+    
+        <!-- Disable captcha -->
         <input type="hidden" name="_captcha" value="false">
+    
+        <!-- Actual fields -->
         <input type="text" name="name" placeholder="Your Full Name" required>
         <input type="email" name="email" placeholder="Your Email" required>
         <textarea name="message" placeholder="Your Message Here" required></textarea>
+    
         <button type="submit">Send</button>
     </form>
+
     """
 
     left_column, right_column = st.columns(2)
@@ -561,6 +572,7 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
+
 
 
 

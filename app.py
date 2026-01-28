@@ -514,20 +514,20 @@ with st.container():
     
 
     contact_form = """
-<form action="https://formsubmit.co/3565291d5302d775cea9f27bb310452e" method="POST">
-
-
-    <input type="text" name="_honey" style="display:none">
-
-
-    <input type="hidden" name="_captcha" value="false">
-
-    <input type="text" name="name" placeholder="Your Full Name" required>
-    <input type="email" name="email" placeholder="Your Email" required>
-    <textarea name="message" placeholder="Your Message Here" required></textarea>
-
-    <button type="submit">Send</button>
-</form>
+        <form action="https://formsubmit.co/3565291d5302d775cea9f27bb310452e" method="POST">
+        
+        
+            <input type="text" name="_honey" style="display:none">
+        
+        
+            <input type="hidden" name="_captcha" value="false">
+        
+            <input type="text" name="name" placeholder="Your Full Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message Here" required></textarea>
+        
+            <button type="submit">Send</button>
+        </form>
 
 """
 
@@ -571,6 +571,7 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
+
 
 
 

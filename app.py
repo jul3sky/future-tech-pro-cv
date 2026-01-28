@@ -529,7 +529,7 @@ with st.container():
                 <button type="submit">Send</button>
             </form>
 
-"""
+            """
 
     left_column, right_column = st.columns(2)
     with left_column:
@@ -571,6 +571,7 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
+
 
 
 
